@@ -1,0 +1,19 @@
+- "Fredoka One" fontu her oyunun font tipi. 
+
+- Aksi söylenmedikçe Elmas, Altın ve Para'nın siyah outline hali kullanılacak. Solo spritelarda isimlerin yanında 01, 02.. olarak gidiyo, 
+ne kadar düşük rakam o kadar iyi sonuç.
+
+- Incremental genel parçaları bıraktım, üzerine yazılacak Level ve Para gibi yazıları "Fredoka One" ile yazınız. Incremental için ayrı 
+bir Referans görseli bıraktım, benim gönlümden üstteki gibi geçiyo ama bi tık küçük oluyo yazı bu şekilde. İsterseniz
+diğer türlü de kullanabilirsiniz. 
+
+- Bir şeyin dış çizgisi hangi renkse yanına gelecek şeyin de dış çizgisini aynı renk seçin. Aksi durumlar olabilir xd
+
+- Bütün UI'leri 4096x4096 bir atlas içerisine de attım, optimizasyon açısından oradan kesip kullanırsanız performans artışı sağlarsınız. Yok 
+ben bozuyom compress hatası oldu toll yanlış yapmış dememeniz için tek tek parça halinde de bazı şeyleri bıraktım xd Şaka bi yana test ettim
+bu atlas olayında bazı şeyler patlıyor. Özellikle Tap to Start, Tap!, Butonlar pikselleşebiliyor. 
+
+- "Sprite_LevelCompletedBGLight" Level Complete, Level Failed veya ortaya çıkarmak istediğiniz herhangi bir şey için bu sprite'ı arkada kullanın.
+
+Teşekkürler Developer arkadaşlarım :>
+toll

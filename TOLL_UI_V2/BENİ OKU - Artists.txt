@@ -1,0 +1,38 @@
+- Oyunlara ikon yapacak arkadaşlar için, görselleri günlük free şekilde 3 defa "https://www.freepik.com" adresinden çekebilirsiniz. İndirme sayısı
+IP adresine bağlı olduğu için lütfen birşey indirirken 10 kere düşünün. Çünkü bütün ofis bu siteden günlük max 3 defa indirme yapabilir.
+Eğer günlük hak dolduysa ve indirmeniz gerekiyosa görsele sağ tıklayıp yeni sekmede açın. Daha sonra bu görseli indirin ve Adobe
+Illustrator programında "Image Trace" seçeneği ile olabildiğince düzgün bi vektör görsel haline getirmeye çalışın. Eksikleri veya bozuk
+yerlerini elinizle fixlemeniz gerek. Küçük ikoncuklar arıyosanız "https://www.iconfinder.com" sitesinden baya bişey çözebilirsiniz. Free
+olmayanlar da mevcut bu sitede ama Image Trace yöntemi ile hızlıca vektöre çevirip kullanabilirsiniz. Ben manyağım diyenler için aynı
+yöntemi "https://www.shutterstock.com/tr/" sitesinde de deneyebilirsiniz. Aşağıya kolay erişebilmeniz için bir kaç farklı site bırakıcam. 
+Bunlar haricinde ufak bi ikon nasıl yapılır tutorial videosu çektim, orda muhtemelen bütün cevapları görebilirsiniz.
+
+https://www.flaticon.com/
+https://icons8.com/icons
+https://iconarchive.com/
+https://freeicons.io/
+Bütün emojileri bulmak için : https://emojipedia.org/
+
+ve unutmayın, google görseller de baya iyi bi kaynak xd
+
+- İkonlarda kullanılan fix arka planların hepsini bıraktım. "Backgrounds" isimli dosyadan erişebilirsiniz.
+Dosya isimlerini BG01, BG02, BG03... olarak adlandırdım. Rakam ne kadar küçükse
+kullanım sırası ve beğenilmesi o kadar iyidir. Yani bir arka plan seçecekseniz BG01 den başlayarak bakmaya başlayın xd
+
+- İkon boyutu 1024x1024 olarak atılıyor. Ancak oyun store kısmına gittiği zaman bütün kenarlar bevel efektine uğruyor. Bu yüzden yapılan
+ikonları olabildiğince köşelerden uzak tutun ve konuya zoom yapın.
+
+- İkon için oyun içi görsel nerdeyse hiç tercih edilmiyo, vaktiniz varsa direk vektör olarak veya photoshoptan çizebilenler psden çizerek
+yaparsa daha iyi sonuçlar elde ederler. 
+
+- Bir grafik atasözü der ki; Less is more.
+
+- Developerlar bazen gözden kaçırabiliyor, Fredoka fontu kullanılmıyosa bile bir oyunda istisnalar haricinde her zaman tek bir font
+kullandırtın.
+
+- Illustrator dosyalarını benim bilgisayarda "C:\Users\OTTO-1\Desktop\Tolga\Assets\AI Files" uzantısına giderek bulabilirsiniz. 
+Versiyon Adobe Illustrator 2020.
+
+
+Teşekkürler Artist arkadaşlarım :>
+toll
