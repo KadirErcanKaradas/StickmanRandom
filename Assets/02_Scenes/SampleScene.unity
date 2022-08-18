@@ -658,6 +658,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1255314239}
   - component: {fileID: 1255314240}
+  - component: {fileID: 1255314241}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -699,6 +700,25 @@ MonoBehaviour:
   - {fileID: 1523590663655373347, guid: ca0d360d4930d7d4a8faf78b9bcbb6a3, type: 3}
   - {fileID: 1611688722306773740, guid: 767c1c9a2bb5dc1498d96e71dec5209b, type: 3}
   groundStickman: []
+--- !u!114 &1255314241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255314238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d8359c627312d34fbccd1ee0901070d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pools:
+  - objectPrefab: {fileID: 844878942218200925, guid: 9b1abeddebd3537479937ed347f77385, type: 3}
+    poolSize: 5
+  - objectPrefab: {fileID: 1611688722306773740, guid: 767c1c9a2bb5dc1498d96e71dec5209b, type: 3}
+    poolSize: 5
+  - objectPrefab: {fileID: 1523590663655373347, guid: ca0d360d4930d7d4a8faf78b9bcbb6a3, type: 3}
+    poolSize: 5
 --- !u!1 &1279741013
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,6 +898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSpawn: 1
+  objectPool: {fileID: 1255314241}
 --- !u!222 &4443734960558804705
 CanvasRenderer:
   m_ObjectHideFlags: 0

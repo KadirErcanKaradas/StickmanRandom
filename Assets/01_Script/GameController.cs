@@ -17,6 +17,7 @@ public class GameController : MonoBehaviour
 
     public List<GameObject> stickman = new List<GameObject>();
     public List<GameObject> groundStickman = new List<GameObject>();
+    public int stickmanCount=10;
 
     void Awake()
     {

@@ -5,6 +5,7 @@ using DG.Tweening;
 
 public class StickmanMovement : MonoBehaviour
 {
+    [SerializeField] private ObjectPool objectPool;
     void Start()
     {
         
@@ -23,7 +24,11 @@ public class StickmanMovement : MonoBehaviour
             GameController.Instance.groundStickman.Remove(gameObject);
 
             transform.DOMove(worldPos, 1).OnComplete(() => GameController.Instance.uiController.StickmanBlueTextUp());
-            transform.DOScale(Vector3.one * 0.05f, 1f);
+            transform.DOScale(Vector3.one * 0.05f, 1f).OnComplete(()=> {
+                gameObject.SetActive(false);
+                gameObject.transform.DOScale(Vector3.one,1f);
+                GameController.Instance.groundStickman.Remove(gameObject);
+            });
         }
         else if (gameObject.CompareTag("Red"))
         {
@@ -32,7 +37,11 @@ public class StickmanMovement : MonoBehaviour
             GameController.Instance.groundStickman.Remove(gameObject);
 
             transform.DOMove(worldPos, 1).OnComplete(()=>GameController.Instance.uiController.StickmanRedTextUp());
-            transform.DOScale(Vector3.one * 0.05f, 1f);
+            transform.DOScale(Vector3.one * 0.05f, 1f).OnComplete(() => {
+                gameObject.SetActive(false);
+                gameObject.transform.DOScale(Vector3.one, 1f);
+                GameController.Instance.groundStickman.Remove(gameObject);
+            });
         }
         else if (gameObject.CompareTag("Yellow"))
         {
@@ -41,7 +50,11 @@ public class StickmanMovement : MonoBehaviour
             GameController.Instance.groundStickman.Remove(gameObject);
 
             transform.DOMove(worldPos, 1).OnComplete(() => GameController.Instance.uiController.StickmanYellowTextUp());
-            transform.DOScale(Vector3.one * 0.05f, 1f);
+            transform.DOScale(Vector3.one * 0.05f, 1f).OnComplete(() => {
+                gameObject.SetActive(false);
+                gameObject.transform.DOScale(Vector3.one, 1f);
+                GameController.Instance.groundStickman.Remove(gameObject);
+            });
         }
     }
 }

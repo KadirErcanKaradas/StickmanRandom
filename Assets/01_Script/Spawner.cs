@@ -6,6 +6,7 @@ public class Spawner : MonoBehaviour
 {
 
     public bool isSpawn = true;
+    [SerializeField] private ObjectPool objectPool;
     void Start()
     {
         StartCoroutine(SpawnStickman());
@@ -17,13 +18,17 @@ public class Spawner : MonoBehaviour
 
         while (isSpawn)
         {
-            if (GameController.Instance.groundStickman.Count<10)
+            
+            if (GameController.Instance.groundStickman.Count < GameController.Instance.stickmanCount)
             {
-                int randomStickman = Random.Range(0, 3);
+                int randomColor = Random.Range(0,0);
+                print(randomColor);
+                GameObject obj =   objectPool.GetPooledObject(randomColor);
                 float randomPosX = Random.Range(4.55f, -3.85f);
                 float randomPosZ = Random.Range(5.62f, -8.72f);
-                var Stickman = Instantiate(GameController.Instance.stickman[randomStickman], new Vector3(randomPosX, 4.3f, randomPosZ), Quaternion.identity);
-                GameController.Instance.groundStickman.Add(Stickman); 
+                obj.transform.position = new Vector3(randomPosX,4.3f,randomPosZ);
+                GameController.Instance.groundStickman.Add(obj);
+                
             }
             yield return new WaitForSeconds(2f);
         }
